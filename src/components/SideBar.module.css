@@ -1,0 +1,13 @@
+/** @format */
+
+.sidebar {
+  background-color: #43c0f6;
+  height: 80vh;
+  width: 15vw;
+  transition: width 0.3s ease-in-out;
+}
+
+.isActive {
+  width: 5vw;
+  transition: width 0.3 ease-in-out;
+}
