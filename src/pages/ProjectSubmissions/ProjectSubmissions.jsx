@@ -1,7 +1,14 @@
-import React from "react";
+import SideBar from "../CommonComponents/SideBar";
 
 function ProjectSubmissions() {
-  return <div>ProjectSubmissions This is Mitch's page</div>;
+  return (
+    <>
+      <h1>ProjectSubmissions This is Mitch's page</h1>
+      <div>
+        <SideBar />
+      </div>
+    </>
+  );
 }
 
 export default ProjectSubmissions;
