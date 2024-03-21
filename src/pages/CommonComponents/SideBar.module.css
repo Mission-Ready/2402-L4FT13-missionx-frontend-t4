@@ -1,11 +1,35 @@
-.sidebar {
-  background-color: #43c0f6;
-  height: 80vh;
+.teacherSideBar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 15vw;
+  height: 80vh;
+  background-color: #43c0f6;
+  color: #fff;
+  padding: 20px;
   transition: width 0.3s ease-in-out;
 }
 
-.isActive {
+.teacherSideBar.isActive {
   width: 5vw;
   transition: width 0.3 ease-in-out;
+}
+
+.teacherSideBarList {
+  margin-top: 100px;
+}
+
+.sidebarLink {
+  display: block;
+  margin-bottom: 20px;
+
+  color: #fff;
+
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.active {
+  background-color: #b2e4fa;
+  color: grey;
 }
