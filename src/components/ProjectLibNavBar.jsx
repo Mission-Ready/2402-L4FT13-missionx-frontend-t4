@@ -1,11 +1,11 @@
 /** @format */
 
 import React from "react";
-import styles from "./NavBar.module.css";
+import styles from "./components/ProjectLibNavBar.module.css";
 import logo from "../assets/NavBar/LevelUpWorks-blue.png";
 
 
-function NavBar() {
+export default function ProjectLibNavBar() {
   return (
     <>
       <div className={styles.NavBar}>
@@ -20,6 +20,4 @@ function NavBar() {
       </div>
     </>
   );
-}
-
-export default NavBar;
+};

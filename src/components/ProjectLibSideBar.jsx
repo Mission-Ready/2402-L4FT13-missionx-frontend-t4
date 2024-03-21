@@ -1,9 +1,9 @@
 /** @format */
 import React, { useState } from "react";
-import styles from "../components/SideBar.module.css"
 
 
-function SideBar() {
+
+export default function ProjectLibSideBar() {
   const [isActive, setIsActive] = useState(false);
   const toggleSideBar = () => {
     setIsActive(!isActive);
@@ -23,4 +23,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+
