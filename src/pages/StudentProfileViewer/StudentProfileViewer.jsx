@@ -1,7 +1,12 @@
 import React from "react";
+import App from "../../App";
 
 function StudentProfileViewer() {
-  return <div>StudentProfileViewer</div>;
+  return (
+    <>
+    </>
+
+  );
 }
 
 export default StudentProfileViewer;
