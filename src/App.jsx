@@ -1,7 +1,14 @@
 import "./App.css";
+import NavBar from "./pages/CommonComponents/NavBar.jsx";
+
 
 function App() {
-  return <>Start your Mission X here!🕺</>;
+  return (
+  <>
+  <NavBar/>
+   
+  </>
+  )
 }
 
 export default App;

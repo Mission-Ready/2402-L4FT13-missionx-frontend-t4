@@ -1,0 +1,13 @@
+button{
+    background-color: deeppink;
+    margin: 1rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 8rem;
+    height: 2rem;
+}
+
+.flags{
+    float: right;
+}
