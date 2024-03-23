@@ -1,27 +1,26 @@
-.active {
+.sidebarLink.active {
   background-color: #b2e4fa;
-  color: grey;
+  color: black;
 }
 
 .sideBarArrow {
   border: none;
+  background-color: #b2e4fa;
   display: flex;
   justify-content: flex-end;
 }
 
 .teacherSideBar {
   position: fixed;
-  top: 0;
   left: 0;
   width: 15vw;
   height: 80vh;
   background-color: #43c0f6;
   color: #fff;
-  padding: 20px;
+  padding: 0px;
   transition: width 0.3s ease-in-out;
   display: flex;
-  flex-direction: column; /* Make the sidebar items stack vertically */
-  justify-content: flex-start; /* Align items to the top */
+  flex-direction: column;
 }
 
 .teacherSideBar.isActive {
@@ -30,33 +29,65 @@
 }
 
 .teacherSideBarList {
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 20px;
 }
 
 .sidebarLink {
-  display: flex; /* Use flexbox for icon-text alignment */
-  align-items: center; /* Align items vertically */
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+  padding-left: 7%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .sidebarLink img {
-  width: 20px; /* Adjust the width of the icons */
-  margin-right: 10px; /* Add spacing between icon and text */
+  width: 20px;
+  margin-right: 10px;
 }
 
 button {
-  /* margin-top:;  */
-  border: none; /* Remove the border */
-  background: transparent; /* Make the background transparent */
+  border: none;
+  background: transparent;
   cursor: pointer;
-  display: flex; /* Use flexbox for icon alignment */
-  align-items: center; /* Align items vertically */
-  justify-content: flex-end; /* Align content to the end (right) */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #b2e4fa;
+  margin-left: auto;
+  padding-left: 7%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 7%;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 15%;
 }
 
 button img {
-  width: 20px; /* Adjust the width of the arrow icon */
+  width: 20px;
+}
+
+.teacherPhoto {
+  width: 35%;
+  margin-left: 30%;
+  margin-bottom: 30px;
+}
+
+.bottomIcons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+}
+
+.bottomIconNavLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items horizontally */
+  text-align: center; /* Center the text */
+  text-decoration: none;
+  color: white;
+  padding-bottom: 10%;
 }
