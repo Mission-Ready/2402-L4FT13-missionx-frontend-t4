@@ -11,7 +11,8 @@
 }
 
 .teacherSideBar {
-  position: fixed;
+  /* position: fixed; */
+  margin-left: 0%;
   left: 0;
   width: 15vw;
   height: 80vh;
