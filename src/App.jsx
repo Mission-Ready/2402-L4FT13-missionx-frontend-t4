@@ -1,12 +1,11 @@
-
 /** @format */
 
-import "./App.css";
+
+
+
 import ProjectSideBar from "./components/ProjectSideBar";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import NavBar from "./pages/CommonComponents/NavBar.jsx";
-
 
 //Import Components
 import Home from "./pages/Home/Home";
@@ -24,14 +23,17 @@ import SubmitProject from "./pages/SubmitProject/SubmitProject";
 import StudentProfileViewer from "./pages/StudentProfileViewer/StudentProfileViewer";
 import VideoTutorial from "./pages/VideoTutorial/VideoTutorial";
 
-
 function App() {
   return (
     <>
 
+      <h1>Mission X</h1>
+
+
      
 
       
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/help-requests" element={<HelpRequests />} />

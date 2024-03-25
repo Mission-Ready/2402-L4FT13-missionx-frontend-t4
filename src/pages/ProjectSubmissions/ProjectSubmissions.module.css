@@ -1,0 +1,17 @@
+.page-container {
+  position: relative; /* Set the container position to relative */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Position the footer below the sidebar */
+.footer {
+  position: relative; /* Or set it to absolute if needed */
+  z-index: 1; /* Ensure the footer appears above other content */
+  text-align: center;
+}
