@@ -1,8 +1,10 @@
-import styles from "../../components/Footer.module.css";
+/** @format */
+
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <div className={styles.layout}>
+    <div className={styles.footer - layout}>
       <div className="company">
         <h3>COMPANY</h3>
         <p>About us</p>

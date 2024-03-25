@@ -1,8 +1,10 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-.layout {
+.footer-layout {
   background-color: #b2e4fa;
   width: 100%;
   height: 535px;
@@ -13,12 +15,12 @@
   color: #707070;
 }
 
-.layout > h3 {
+.footer-layout > h3 {
   font-size: 24px;
   font-family: "Nunito";
 }
 
-.layout > p {
+.footer-layout > p {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
 }

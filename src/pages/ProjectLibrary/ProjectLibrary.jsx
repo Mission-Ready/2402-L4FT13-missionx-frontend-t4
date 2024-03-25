@@ -1,8 +1,10 @@
 /** @format */
 
 import React from "react";
-import ProjectNavBar from "../../components/ProjectNavBar";
-import ProjectSideBar from "../../components/ProjectSideBar";
+import ProjectNavBar from "../../components/ProjectNavBar.jsx";
+import ProjectSideBar from "../../components/ProjectSideBar.jsx";
+import Footer from "../../components/Footer.jsx";
+import styles from "../../components/ProjectLibrary.module.css";
 
 export default function ProjectLibrary() {
   const SDProjectLibraryData = [
@@ -100,21 +102,54 @@ export default function ProjectLibrary() {
 
   return (
     <>
-      <ProjectNavBar />
-      <div className={styles.layout}></div>
-      <ProjectSideBar />
-      <div>Right Section</div>
-      {SDProjectLibraryData.map((project) => {
-        return (
-          <>
-            <img src={project.src} alt="project" />
-            <div>{project.title}</div>
-            <div>{project.level}</div> <div>{project.activity_type}</div>
-          </>
-        );
-      })}
+      {/* <ProjectNavBar /> */}
+      <div>
+        <div className={styles.main}>
+          <br />
+          <div>
+            <h1>PROJECTS</h1>
+            <p>
+              Welcome to the project library.You can use the Filter on the right
+              to help you search for specific projects.
+            </p>
+            <br />
 
-      <Footer />
+            <div className={styles.btn_container}>
+              <div>
+                <button className={styles.projectBegBtn}>BEGINNER</button>
+                <button className={styles.projectBtn}>INTERMEDIATE</button>
+                <button className={styles.projectBtn}>ADVANCED</button>
+              </div>
+              <div className={styles.projectBtns}>
+                SHOW <button className={styles.projectBtns}>5</button>
+                <button className={styles.projectBtns}>10</button>
+                <button className={styles.projectBtns}>15</button>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.container}>
+            <ProjectSideBar />
+          </div>
+          <div className={styles.projectImages}>
+            {SDProjectLibraryData.map((project, index) => (
+              <div key={index}>
+                <img src={project.src} alt="prj"></img>
+                <p>
+                  {" "}
+                  {project.title}
+                  <br />
+                  BEGINNER | Animation
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className={styles.bttBtn}> </div>
+        <button>Back to Top</button>
+        <br />
+        {/* <Footer /> */}
+      </div>
     </>
   );
 }
