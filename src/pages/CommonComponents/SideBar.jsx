@@ -14,7 +14,6 @@ import logoutIcon from "../../assets/logout.png";
 
 function SideBar() {
   const [isActive, setIsActive] = useState(false);
-  const location = useLocation();
 
   const toggleSideBar = () => {
     setIsActive(!isActive);
@@ -36,7 +35,11 @@ function SideBar() {
             }`}
           >
             <img src={progressTrackerIcon} alt="icon" />
-            PROGRESS TRACKER
+            {isActive ? (
+              <span style={{ display: "none" }}>PROGRESS TRACKER</span>
+            ) : (
+              <span>PROGRESS TRACKER</span>
+            )}
           </NavLink>
           <NavLink
             to="/student-profiles"
@@ -45,7 +48,11 @@ function SideBar() {
             }`}
           >
             <img src={studentProfileIcon} alt="icon" />
-            STUDENT PROFILES
+            {isActive ? (
+              <span style={{ display: "none" }}>STUDENT PROFILES</span>
+            ) : (
+              <span>STUDENT PROFILES</span>
+            )}
           </NavLink>
           <NavLink
             to="/help-requests"
@@ -54,7 +61,11 @@ function SideBar() {
             }`}
           >
             <img src={helpRequestsIcon} alt="icon" />
-            HELP REQUESTS
+            {isActive ? (
+              <span style={{ display: "none" }}>HELP REQUESTS</span>
+            ) : (
+              <span>HELP REQUESTS</span>
+            )}
           </NavLink>
           <NavLink
             to="/project-submissions"
@@ -63,7 +74,11 @@ function SideBar() {
             }`}
           >
             <img src={projectSubmissionsIcon} alt="icon" />
-            PROJECT SUBMISSIONS
+            {isActive ? (
+              <span style={{ display: "none" }}>PROJECT SUBMISSIONS</span>
+            ) : (
+              <span>PROJECT SUBMISSIONS</span>
+            )}
           </NavLink>
           <NavLink
             to="/project-library"
@@ -72,7 +87,11 @@ function SideBar() {
             }`}
           >
             <img src={projectLibraryIcon} alt="icon" />
-            PROJECT LIBRARY
+            {isActive ? (
+              <span style={{ display: "none" }}>PROJECT LIBRARY</span>
+            ) : (
+              <span>PROJECT LIBRARY</span>
+            )}
           </NavLink>
         </div>
         <button className={styles.arrowButton} onClick={toggleSideBar}>
@@ -87,7 +106,11 @@ function SideBar() {
                 alt="Profile"
               />
             </div>
-            <div>Profile</div>
+            {isActive ? (
+              <div style={{ display: "none" }}>Profile</div>
+            ) : (
+              <div>Profile</div>
+            )}
           </NavLink>
           <NavLink className={styles.bottomIconNavLink}>
             <div>
@@ -97,7 +120,11 @@ function SideBar() {
                 alt="Settings"
               />
             </div>
-            <div>Settings</div>
+            {isActive ? (
+              <div style={{ display: "none" }}>Settings</div>
+            ) : (
+              <div>Settings</div>
+            )}
           </NavLink>
           <NavLink className={styles.bottomIconNavLink}>
             <div>
@@ -107,7 +134,11 @@ function SideBar() {
                 alt="Logout"
               />
             </div>
-            <div>Logout</div>
+            {isActive ? (
+              <div style={{ display: "none" }}>Logout</div>
+            ) : (
+              <div>Logout</div>
+            )}
           </NavLink>
         </div>
       </div>
