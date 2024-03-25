@@ -1,5 +1,5 @@
 
-button{
+.pinkBtn{
     background-color: deeppink;
     margin: 3rem 1rem 0 0;
     border-radius: 5px;
@@ -13,6 +13,28 @@ button{
     top: -20px;
     padding: 0;
 }
+.blueBtn{
+    background-color: aqua;
+    margin: 3rem 1rem 0 0;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 14rem;
+    height: 2rem;
+    font-weight: 700;
+    position: relative;
+    left: 60%;
+    top: -20px;
+    padding: 0;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px dashed black;
+}
 
 .flag {
     float: right;
@@ -20,8 +42,9 @@ button{
     width: 2rem;
 }
 
-.btn{
-    background-color: aqua;
+.flag:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .star{

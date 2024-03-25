@@ -10,8 +10,8 @@ function NavBar() {
     <>
     <div className={styles.container}>
       <img src={star} width="10%" className={styles.star}/>
-      <button>Help Center</button>
-      <button className={styles.btn}>More Projects</button>
+      <button className={styles.pinkBtn}>Help Center</button>
+      <button className={styles.blueBtn}>More Projects</button>
 
       <img src={maoriFlag} alt="flag-img" className={styles.flag}/>
       <img src={nzFlag} alt="flag-img" className={styles.flag}/>

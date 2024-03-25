@@ -92,7 +92,7 @@ function StudentProfileViewer(profiles) {
     <>
     <NavBar/>
    
-    <SideBar/>
+    {/* <SideBar/> */}
     
     
     {studentProfiles.map((profiles) => {
