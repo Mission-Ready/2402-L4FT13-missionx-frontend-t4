@@ -8,11 +8,13 @@ export default function ProjectNavBar() {
     <>
       <div className={styles.navbar}>
         <div className={styles.leftNavBar}>
+          <img src={star} width="10%" />
           <Link to="./pages/Home/Home"></Link>
         </div>
         <div className={styles.centerNavbar}>
           <p className={styles.homeBtn}>
-            <Link to="./pages/Home/Home">HOME</Link></p>
+            <Link to="./pages/Home/Home">HOME</Link>
+          </p>
           <p className={styles.projectsBtn}>PROJECTS</p>
           <p className={styles.teachersBtn}>TEACHERS</p>
         </div>

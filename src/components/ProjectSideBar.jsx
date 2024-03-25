@@ -1,7 +1,6 @@
 /** @format */
 import styles from "../components/ProjectSideBar.module.css";
-import React, { useState } from "react";
-// Created an array within the function to maintain multiple objects being turned into checkboxes//
+
 export default function ProjectSideBar() {
   const handleCheck = (e) => {
     console.log(e.target.checked);
