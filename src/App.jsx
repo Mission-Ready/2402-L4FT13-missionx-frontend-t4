@@ -1,9 +1,5 @@
 /** @format */
 
-
-
-
-import ProjectSideBar from "./components/ProjectSideBar";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -26,14 +22,6 @@ import VideoTutorial from "./pages/VideoTutorial/VideoTutorial";
 function App() {
   return (
     <>
-
-      <h1>Mission X</h1>
-
-
-     
-
-      
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/help-requests" element={<HelpRequests />} />

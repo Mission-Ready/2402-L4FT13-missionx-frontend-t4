@@ -18,14 +18,17 @@
 import SideBar from "../CommonComponents/SideBar";
 import Footer from "../CommonComponents/Footer";
 import styles from "./ProjectSubmissions.module.css";
+import NavBar from "../CommonComponents/NavBar";
 
 function ProjectSubmissions() {
   return (
     <div className="page-container">
-      <h1>ProjectSubmissions This is Mitch's page</h1>
+      <div>
+        <NavBar />
+      </div>
       <div className={styles.content}>
         <SideBar />
-        {/* Add your main content here */}
+        Add your main content here
       </div>
       <Footer className={styles.footer} />
     </div>

@@ -1,29 +1,39 @@
+.pinkBtn {
+  background-color: deeppink;
+  margin: 3rem 1rem 0 0;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 14rem;
+  height: 2rem;
+  font-weight: 700;
+  position: relative;
+  left: 60%;
+  top: -20px;
+  padding: 0;
+}
 
-button{
-    background-color: deeppink;
-    margin: 3rem 1rem 0 0;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    width: 14rem;
-    height: 2rem;
-    font-weight: 700;
-    position: relative;
-    left: 60%;
-    top: -20px;
-    padding: 0;
+.blueBtn {
+  background-color: aqua;
+  margin: 3rem 1rem 0 0;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 14rem;
+  height: 2rem;
+  font-weight: 700;
+  position: relative;
+  left: 60%;
+  top: -20px;
+  padding: 0;
 }
 
 .flag {
-    float: right;
-    margin: 15px 5px 0 0;
-    width: 2rem;
+  float: right;
+  margin: 15px 5px 0 0;
+  width: 2rem;
 }
 
-.btn{
-    background-color: aqua;
-}
-
-.star{
-    position: absolute;
+.star {
+  position: absolute;
 }
