@@ -2,8 +2,6 @@
 
 
 
-
-import ProjectSideBar from "./components/ProjectSideBar";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
