@@ -1,100 +1,114 @@
 import React from "react";
 import NavBar from "../CommonComponents/NavBar";
 import styles from "./StudentProfileViewer.module.css"
+import StudentProfiles from "../StudentProfiles/StudentProfiles";
+import SideBar from "../CommonComponents/SideBar";
 
-function StudentProfileViewer(props) {
+function StudentProfileViewer(profiles) {
+
+
 
   const studentProfiles = [
     {
         name: "Aiden Andrews",
         gender: "male",
-        image: '/images/students/AidenAndrews.png'
+        img: '/images/students/AidenAndrews.png'
     },
     {
         name: "Alice Kindellan",
         gender: "female",
-        image: '/images/students/AliceKindellan.png'
+        img: '/images/students/AliceKindellan.png'
     },
     {
         name: "Courtney Bristol",
         gender: "female",
-        image: '/images/students/CourtneyBristol.png'
+        img: '/images/students/CourtneyBristol.png'
     },
     {
         name: "Hanu Nepe",
         gender: "male",
-        image: '/images/students/HanuNepe.png'
+        img: '/images/students/HanuNepe.png'
     },
     {
         name: "Harry McGrath",
         gender: "male",
-        image: '/images/students/HarryMcGrath.png'
+        img: '/images/students/HarryMcGrath.png'
     },
     {
         name: "Javier Fuego",
         gender: "male",
-        image: '/images/students/JavierFuego.png'
+        img: '/images/students/JavierFuego.png'
     },
     {
         name: "Lisa Horan",
         gender: "female",
-        image: '/images/students/LisaHoran.png'
+        img: '/images/students/LisaHoran.png'
     },
     {
         name: "Lucia Mendez",
         gender: "female",
-        image: '/images/students/LuciaMendez.png'
+        img: '/images/students/LuciaMendez.png'
     },
     {
         name: "Mark OLeary",
         gender: "male",
-        image: '/images/students/MarkOLeary.png'
+        img: '/images/students/MarkOLeary.png'
     },
     {
         name: "Nagani Cortes",
         gender: "female",
-        image: '/images/students/NaganiCortes.png'
+        img: '/images/students/NaganiCortes.png'
     },
     {
         name: "Neveah Machenry",
         gender: "female",
-        image: '/images/students/NeveahMachenry.png'
+        img: '/images/students/NeveahMachenry.png'
     },
     {
         name: "Rawiri Fletcher",
         gender: "male",
-        image: '/images/students/RawiriFletcher.png'
+        img: '/images/students/RawiriFletcher.png'
     },
     {
         name: "Shane OMonahan",
         gender: "male",
-        image: '/images/students/ShaneOMonahan.png'
+        img: '/images/students/ShaneOMonahan.png'
     },
     {
         name: "Simon Laine",
         gender: "male",
-        image: '/images/students/SimonLaine.png'
+        img: '/images/students/SimonLaine.png'
     },
     {
         name: "Tokio Han",
         gender: "male",
-        image: '/images/students/TokioHan.png'
+        img: '/images/students/TokioHan.png'
     },
 ];
-
-
+    
+  
 
   return (
     <>
     <NavBar/>
-
+   
+    {/* <SideBar/> */}
+    
+    
     {studentProfiles.map((profiles) => {
+      console.log(profiles.name)
       return(
       <>
+      {/* <div className={styles.body}/>
+      <div className={styles.container}>
+        <img className={styles.image} src={profiles.img}/>
+        <div className={styles.name} >{profiles.name}</div>
+      </div> */}
+
       <div className={styles.body}>
 
         <div className={styles.container}>
-           <div className={styles.profiles}> <img src={profiles.image} alt="student-profiles"/>
+           <div className={styles.profiles}> <img src={profiles.img} alt="student-profiles"/>
         
               <div className={styles.name}>{profiles.name}</div>
           </div>
@@ -116,31 +130,31 @@ function StudentProfileViewer(props) {
       <div className={styles.container}>
         
         <div className={styles.profiles}>
-        <img src={'/images/students/AidenAndrews.png'} alt="student-profile"/>
+        <img src={'/imgs/students/AidenAndrews.png'} alt="student-profile"/>
             <div className={styles.name}>
             Aiden Andrews
             </div>
         </div>
         <div className={styles.profiles}>
-        <img src={'/images/students/AliceKindellan.png'} alt="student-profile"/>
+        <img src={'/imgs/students/AliceKindellan.png'} alt="student-profile"/>
             <div className={styles.name}>
             Alice Kindellan
             </div>
         </div>
         <div className={styles.profiles}>
-        <img src={'/images/students/CourtneyBristol.png'} alt="student-profile"/>
+        <img src={'/imgs/students/CourtneyBristol.png'} alt="student-profile"/>
             <div className={styles.name}>
             Courtney Bristol
             </div>
         </div>
         <div className={styles.profiles}>
-        <img src={'/images/students/HanuNepe.png'} alt="student-profile"/>
+        <img src={'/imgs/students/HanuNepe.png'} alt="student-profile"/>
             <div className={styles.name}>
             Hanu Nepe
             </div>
         </div>
         <div className={styles.profiles}>
-        <img src={'/images/students/HarryMcGrath.png'} alt="student-profile"/>
+        <img src={'/imgs/students/HarryMcGrath.png'} alt="student-profile"/>
             <div className={styles.name}>
             Harry McGrath
             </div>
@@ -152,6 +166,6 @@ function StudentProfileViewer(props) {
     </>
 
   );
-}
+    }
 
 export default StudentProfileViewer;
