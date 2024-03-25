@@ -1,12 +1,20 @@
+
 /** @format */
 
 <<<<<<< Updated upstream
 import "./App.css";
 import ProjectSideBar from "./components/ProjectSideBar";
 import ProjectLibrary from "./pages/ProjectLibrary/ProjectLibrary";
+<<<<<<< HEAD
 =======
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+=======
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import NavBar from "./pages/CommonComponents/NavBar.jsx";
+
+>>>>>>> e679ea7d071994aea698652ce36f8c1cf071d76c
 
 //Import Components
 import Home from "./pages/Home/Home";
@@ -23,14 +31,25 @@ import TeacherProfileViewer from "./pages/TeacherProfileViewer/TeacherProfileVie
 import SubmitProject from "./pages/SubmitProject/SubmitProject";
 import StudentProfileViewer from "./pages/StudentProfileViewer/StudentProfileViewer";
 import VideoTutorial from "./pages/VideoTutorial/VideoTutorial";
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+
+>>>>>>> e679ea7d071994aea698652ce36f8c1cf071d76c
 
 function App() {
   return (
     <>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       <ProjectLibrary />
 =======
+=======
+
+      <ProjectLibrary />
+
+      <h1>Mission X</h1>
+>>>>>>> e679ea7d071994aea698652ce36f8c1cf071d76c
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/help-requests" element={<HelpRequests />} />
@@ -54,7 +73,10 @@ function App() {
         <Route path="/video-tutorial" element={<VideoTutorial />} />
         <Route path="/help-requests" element={<HelpRequests />} />
       </Routes>
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> e679ea7d071994aea698652ce36f8c1cf071d76c
     </>
   );
 }

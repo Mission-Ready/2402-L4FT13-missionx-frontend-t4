@@ -1,7 +1,14 @@
 import React from "react";
 
 function StudentProfiles() {
-  return <div>StudentProfiles</div>;
+
+
+
+
+  
+  return <div>
+    Student Profiles test  123
+  </div>;
 }
 
 export default StudentProfiles;
