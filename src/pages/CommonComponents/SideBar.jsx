@@ -75,7 +75,7 @@ function SideBar() {
             PROJECT LIBRARY
           </NavLink>
         </div>
-        <button onClick={toggleSideBar}>
+        <button className={styles.arrowButton} onClick={toggleSideBar}>
           <img src={arrowLeft} alt="arrow" />
         </button>
         <div className={styles.bottomIcons}>
