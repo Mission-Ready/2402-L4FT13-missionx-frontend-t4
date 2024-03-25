@@ -1,6 +1,7 @@
 /** @format */
 
 .main {
+  left: 100px;
   width: 1920px;
   text-align: center;
   font-family: Nunito, Black;
@@ -11,9 +12,9 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1mm;
+  margin-top: 20px;
   margin-bottom: 1mm;
-  margin-left: 20mm;
+  margin-left: 100px;
   margin-right: 20mm;
 }
 
@@ -24,7 +25,10 @@
   flex-wrap: wrap;
   padding: 20px;
   text-align: center;
-  background-position: 80%;
+  position: absolute;
+  top: 200px;
+  right: 500px;
+  left: 400px;
 }
 .projectImages img {
   height: 7cm;
@@ -33,29 +37,31 @@
   border-radius: 5%;
   border-color: black;
 }
-.projectMain h1 {
-  text-align: left;
-  margin-left: 15cm;
-  color: #6c6c6c;
-}
-
-.projectBtns {
-  text-align: right;
-  padding-right: 30px;
-}
 
 .btnContainer {
   text-align: left;
-  padding-left: 30px;
+  margin-left: 450px;
 }
 
-.bttBtn {
-  text-align: right;
-  color: white;
+/* .bttBtn {
   background-color: #e0ac34;
-  padding-left: 30px;
-}
+} */
 
 .projectBegBtn {
   background-color: #448cfc;
+  width: 100px;
+}
+
+.projectNumBtn {
+  background-color: #448cfc;
+  text-align: center;
+  width: 50px;
+
+}
+
+.projectBtns {
+  text-align: center;
+  width: 50px;
+  position: absolute;
+  right: 100px;
 }

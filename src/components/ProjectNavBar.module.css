@@ -7,12 +7,12 @@
 }
 
 .leftNavbar {
-  left: 236px;
-  top: 5px;
-  width: 174px;
-  height: 55px;
+  left: 400px;
+  top: 16px;
+  width: 82px;
+  height: 22px;
   background: transparent url("../assets/NavBar/LevelUpWorks-white.png");
-  position: relative;
+  position: absolute;
 }
 
 .centerNavbar {
@@ -23,7 +23,7 @@
 }
 
 .homeBtn {
-  left: 900px;
+  left: 700px;
   top: 16px;
   width: 82px;
   height: 22px;
@@ -31,14 +31,14 @@
 }
 
 .projectsBtn {
-  left: 1000px;
+  left: 900px;
   top: 16px;
   width: 82px;
   height: 22px;
   position: absolute;
 }
 
-.teachersButton {
+.teachersBtn {
   left: 1200px;
   top: 16px;
   width: 82px;
@@ -58,7 +58,7 @@
 }
 
 .user {
-  /* background: transparent url("../assets/NavBar/MaoriFlag.png"), url(../assets/NavBar/NZFlag.png); */
+  background: transparent url("../assets/NavBar/Avatar-white.png");
   opacity: 1;
   left: 1497px;
   width: 24px;

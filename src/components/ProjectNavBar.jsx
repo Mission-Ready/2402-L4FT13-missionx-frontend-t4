@@ -7,10 +7,7 @@ export default function ProjectNavBar() {
   return (
     <>
       <div className={styles.navbar}>
-        <div className={styles.leftNavBar}>
-          <img src={star} width="10%" />
-          <Link to="./pages/Home/Home"></Link>
-        </div>
+        <div className={styles.leftNavBar}></div>
         <div className={styles.centerNavbar}>
           <p className={styles.homeBtn}>
             <Link to="./pages/Home/Home">HOME</Link>

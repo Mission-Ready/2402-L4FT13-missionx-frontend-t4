@@ -102,26 +102,26 @@ export default function ProjectLibrary() {
 
   return (
     <>
-      {/* <ProjectNavBar /> */}
+      <ProjectNavBar />
       <div>
         <div className={styles.main}>
           <br />
           <div>
-            <h1>PROJECTS</h1>
+            <h1 className={styles.h1}>PROJECTS</h1>
             <p>
               Welcome to the project library.You can use the Filter on the right
               to help you search for specific projects.
             </p>
             <br />
 
-            <div className={styles.btn_container}>
+            <div className={styles.btnContainer}>
               <div>
                 <button className={styles.projectBegBtn}>BEGINNER</button>
                 <button className={styles.projectBtn}>INTERMEDIATE</button>
                 <button className={styles.projectBtn}>ADVANCED</button>
               </div>
               <div className={styles.projectBtns}>
-                SHOW <button className={styles.projectBtns}>5</button>
+                SHOW <button className={styles.projectNumBtn}>5</button>
                 <button className={styles.projectBtns}>10</button>
                 <button className={styles.projectBtns}>15</button>
               </div>
@@ -145,10 +145,10 @@ export default function ProjectLibrary() {
             ))}
           </div>
         </div>
-        <div className={styles.bttBtn}> </div>
-        <button>Back to Top</button>
+        <div className={styles.bttBtn}>
+          <button>Back to Top</button>
+        </div>
         <br />
-        {/* <Footer /> */}
       </div>
     </>
   );
