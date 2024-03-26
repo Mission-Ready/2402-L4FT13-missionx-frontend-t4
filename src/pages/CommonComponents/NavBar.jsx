@@ -13,6 +13,7 @@ function NavBar() {
       <button className={styles.pinkBtn}>Help Center</button>
       <button className={styles.blueBtn}>More Projects</button>
 
+<<<<<<< Updated upstream
       <img src={maoriFlag} alt="flag-img" className={styles.flag}/>
       <img src={nzFlag} alt="flag-img" className={styles.flag}/>
      
@@ -21,6 +22,11 @@ function NavBar() {
       
     </div>
        
+=======
+        <img src={maoriFlag} alt="flag-img" className={styles.flag} />
+        <img src={nzFlag} alt="flag-img" className={styles.flag} />
+        </div>
+>>>>>>> Stashed changes
     </>
   )
 }

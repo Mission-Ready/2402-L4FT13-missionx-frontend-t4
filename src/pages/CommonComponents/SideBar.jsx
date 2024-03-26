@@ -20,7 +20,17 @@ function SideBar() {
           <NavLink to="/progress-tracker" className={styles.sidebarLink}>
             PROGRESS TRACKER
           </NavLink>
+<<<<<<< Updated upstream
           <NavLink to="/student-profiles" className={styles.sidebarLink}>
+=======
+          <NavLink
+            to="/student-profile-viewer"
+            className={`${styles.sidebarLink} ${
+              location.pathname === "/student-profile-viewer" ? styles.active : ""
+            }`}
+          >
+            <img src={studentProfileIcon} alt="icon" />
+>>>>>>> Stashed changes
             STUDENT PROFILES
           </NavLink>
           <NavLink to="/help-requests" className={styles.sidebarLink}>
