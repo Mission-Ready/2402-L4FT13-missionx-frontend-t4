@@ -1,0 +1,16 @@
+.page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
