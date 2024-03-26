@@ -1,0 +1,238 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    min-height: 50vh; /* Set custom viewport height later */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    width: 30px;
+    height: auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-image: url("Home/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+
+.hero-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+}
+
+
+.hero-desc {
+    text-align: center;
+}
+
+
+.hero-buttons {
+    text-align: center;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.offer-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    text-align: center;
+}
+
+.offer-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+}
+
+.offer-item-2 {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.bi-desc {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+    height: 50px;
+    text-align: center;
+}
+
+.big-icon-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    text-align: center;
+}
+
+.big-icon-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+}
+
+.big-icon-item-2 {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+
+.programme-desc {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+    height: 50px;
+    text-align: center;
+}
+
+.programme-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    text-align: center;
+}
+
+.programme-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+}
+
+.programme-item-2 {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+
+.enhance {
+    background-color: rgba(239,239,241,255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+    height: 80vh;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+
+.waiting-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    text-align: center;
+}
+
+.waiting-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+}
+
+.waiting-item-2 {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 100%;
+}
