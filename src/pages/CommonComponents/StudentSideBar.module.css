@@ -73,12 +73,17 @@
   margin-bottom: 30px;
 }
 
-.bottomIcons {
+.bottomIconsOpened {
   display: flex;
   justify-content: space-evenly;
   margin-top: auto;
 }
 
+.bottomIconsClosed {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
 .bottomIconNavLink {
   display: flex;
   flex-direction: column;

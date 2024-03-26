@@ -155,7 +155,11 @@ function studentSideBar() {
         <button className={styles.arrowButton} onClick={toggleSideBar}>
           <img src={arrowLeft} alt="arrow" />
         </button>
-        <div className={styles.bottomIcons}>
+        <div
+          className={`${
+            isActive ? styles.bottomIconsClosed : styles.bottomIconsOpened
+          }`}
+        >
           <NavLink className={styles.bottomIconNavLink}>
             <div>
               <img
@@ -164,11 +168,9 @@ function studentSideBar() {
                 alt="Profile"
               />
             </div>
-            {isActive ? (
-              <div style={{ display: "none" }}>Profile</div>
-            ) : (
-              <div>Profile</div>
-            )}
+            <div className={`${isActive ? styles.hideText : styles.showText}`}>
+              Profile
+            </div>
           </NavLink>
           <NavLink className={styles.bottomIconNavLink}>
             <div>
@@ -178,11 +180,9 @@ function studentSideBar() {
                 alt="Settings"
               />
             </div>
-            {isActive ? (
-              <div style={{ display: "none" }}>Settings</div>
-            ) : (
-              <div>Settings</div>
-            )}
+            <div className={`${isActive ? styles.hideText : styles.showText}`}>
+              Settings
+            </div>
           </NavLink>
           <NavLink className={styles.bottomIconNavLink}>
             <div>
@@ -192,11 +192,9 @@ function studentSideBar() {
                 alt="Logout"
               />
             </div>
-            {isActive ? (
-              <div style={{ display: "none" }}>Logout</div>
-            ) : (
-              <div>Logout</div>
-            )}
+            <div className={`${isActive ? styles.hideText : styles.showText}`}>
+              Logout
+            </div>
           </NavLink>
         </div>
       </div>
