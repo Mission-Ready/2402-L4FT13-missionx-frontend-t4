@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <div className={styles.footer - layout}>
+    <div className={styles.footerLayout}>
       <div className="company">
         <h3>COMPANY</h3>
         <p>About us</p>
