@@ -10,7 +10,7 @@
   justify-content: flex-end;
 }
 
-.teacherSideBar {
+.studentSideBar {
   margin-left: 0%;
   left: 0;
   width: 15vw;
@@ -23,12 +23,12 @@
   flex-direction: column;
 }
 
-.teacherSideBar.isActive {
+.studentSideBar.isActive {
   width: 5vw;
   transition: width 0.3s ease-in-out;
 }
 
-.teacherSideBarList {
+.studentSideBarList {
   margin-top: 20px;
 }
 
@@ -67,7 +67,7 @@
   border-bottom-left-radius: 15%;
 }
 
-.teacherPhoto {
+.studentPhoto {
   width: 35%;
   margin-left: 30%;
   margin-bottom: 30px;

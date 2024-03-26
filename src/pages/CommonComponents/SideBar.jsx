@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./SideBar.module.css";
 import progressTrackerIcon from "../../assets/TeacherDashboard/progressTracker.png";
 import studentProfileIcon from "../../assets/TeacherDashboard/studentProfiles.png";
