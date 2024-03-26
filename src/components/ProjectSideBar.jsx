@@ -1,22 +1,25 @@
 /** @format */
+import styles from "../components/ProjectSideBar.module.css";
 
 export default function ProjectSideBar() {
-
+  const handleCheck = (e) => {
+    console.log(e.target.checked);
+  };
 
   return (
     <>
-      <div className="ProjectSideBar">
-        <h4>SUBSCRIPTION</h4>
+      <div className={styles.projectSidebar}>
+        <h4 className={styles.h4}>SUBSCRIPTION</h4>
         <label>
-          <input type="checkbox" /> Free
+          <input onChange={handleCheck} type="checkbox" /> Free
         </label>
         <label>
           <br />
           <input type="checkbox" /> Premium
         </label>
-        <h4>ACTIVITY TYPE</h4>
+        <h4 className={styles.h4}>ACTIVITY TYPE</h4>
         <label>
-          <input type="checkbox" checked="checked" /> Animation
+          <input type="checkbox" /> Animation
         </label>
         <br />
         <label>
@@ -31,13 +34,13 @@ export default function ProjectSideBar() {
           <input type="checkbox" /> Augmented Reality
         </label>
         <br />
-        <h4>YEAR LEVEL </h4>
+        <h4 className={styles.h4}>YEAR LEVEL </h4>
         <label>
-          <input type="checkbox" checked="checked" /> 1-4
+          <input type="checkbox" /> 1-4
         </label>
         <br />
         <label>
-          <input type="checkbox" checked="checked" /> 5-6
+          <input type="checkbox" /> 5-6
         </label>
         <br />{" "}
         <label>
@@ -48,9 +51,9 @@ export default function ProjectSideBar() {
           <input type="checkbox" /> 9-13
         </label>
         <br />
-        <h4>SUBJECT MATTER</h4>
+        <h4 className={styles.h4}>SUBJECT MATTER</h4>
         <label>
-          <input type="checkbox" checked="checked" /> Computer Science
+          <input type="checkbox" /> Computer Science
         </label>
         <br />
         <label>
