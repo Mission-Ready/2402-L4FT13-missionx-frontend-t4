@@ -36,12 +36,16 @@ function studentSideBar() {
               location.pathname === "/learning-objectives" ? styles.active : ""
             }`}
           >
-            <img src={learningObjectivesIcon} alt="icon" />
-            {isActive ? (
-              <span style={{ display: "none" }}>LEARNING OBJECTIVES</span>
-            ) : (
-              <span>LEARNING OBJECTIVES</span>
-            )}
+            <img
+              src={learningObjectivesIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              LEARNING OBJECTIVES
+            </span>
           </NavLink>
 
           <NavLink
@@ -50,13 +54,17 @@ function studentSideBar() {
               location.pathname === "/instructions" ? styles.active : ""
             }`}
           >
-            <img src={instructionsIcon} alt="icon" />
+            <img
+              src={instructionsIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
 
-            {isActive ? (
-              <span style={{ display: "none" }}>INSTRUCTIONS</span>
-            ) : (
-              <span>INSTRUCTIONS</span>
-            )}
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              INSTRUCTIONS
+            </span>
           </NavLink>
           <NavLink
             to="/video-tutorial"
@@ -64,12 +72,16 @@ function studentSideBar() {
               location.pathname === "/video-tutorial" ? styles.active : ""
             }`}
           >
-            <img src={videoTutorialIcon} alt="icon" />
-            {isActive ? (
-              <span style={{ display: "none" }}>VIDEO TUTORIAL</span>
-            ) : (
-              <span>VIDEO TUTORIAL</span>
-            )}
+            <img
+              src={videoTutorialIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              VIDEO TUTORIAL
+            </span>
           </NavLink>
           <NavLink
             to="/make-project"
@@ -77,12 +89,16 @@ function studentSideBar() {
               location.pathname === "/make-project" ? styles.active : ""
             }`}
           >
-            <img src={makeProjectIcon} alt="icon" />
-            {isActive ? (
-              <span style={{ display: "none" }}>MAKE PROJECT</span>
-            ) : (
-              <span>MAKE PROJECT</span>
-            )}
+            <img
+              src={makeProjectIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              MAKE PROJECT
+            </span>
           </NavLink>
           <NavLink
             to="/submit-project"
@@ -90,12 +106,16 @@ function studentSideBar() {
               location.pathname === "/submit-project" ? styles.active : ""
             }`}
           >
-            <img src={submitProjectIcon} alt="icon" />
-            {isActive ? (
-              <span style={{ display: "none" }}>SUBMIT PROJECT</span>
-            ) : (
-              <span>SUBMIT PROJECT</span>
-            )}
+            <img
+              src={submitProjectIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              SUBMIT PROJECT
+            </span>
           </NavLink>
           <NavLink
             to="/project-library"
@@ -103,12 +123,16 @@ function studentSideBar() {
               location.pathname === "/project-library" ? styles.active : ""
             }`}
           >
-            <img src={bonusChallengeIcon} alt="icon" />
-            {isActive ? (
-              <span style={{ display: "none" }}>BONUS CHALLENGE</span>
-            ) : (
-              <span>BONUS CHALLENGE</span>
-            )}
+            <img
+              src={bonusChallengeIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              BONUS CHALLENGE
+            </span>
           </NavLink>
           <NavLink
             to="/project-library"
@@ -116,12 +140,16 @@ function studentSideBar() {
               location.pathname === "/project-library" ? styles.active : ""
             }`}
           >
-            <img src={takeTheQuizIcon} alt="icon" />
-            {isActive ? (
-              <span style={{ display: "none" }}>TAKE QUIZ</span>
-            ) : (
-              <span>TAKE QUIZ</span>
-            )}
+            <img
+              src={takeTheQuizIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              TAKE QUIZ
+            </span>
           </NavLink>
         </div>
         <button className={styles.arrowButton} onClick={toggleSideBar}>

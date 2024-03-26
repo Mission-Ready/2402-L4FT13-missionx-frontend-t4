@@ -45,10 +45,10 @@
   overflow: hidden;
 }
 
-.sidebarLink img {
+/* .sidebarLink img {
   width: 20px;
   margin-right: 10px;
-}
+} */
 
 .arrowButton {
   border: none;
@@ -87,4 +87,22 @@
   text-decoration: none;
   color: white;
   padding-bottom: 10%;
+}
+
+.closedIcons {
+  width: 40px;
+  margin-left: 15%;
+}
+
+.openedIcons {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.showText {
+  display: inline;
+}
+
+.hideText {
+  display: none;
 }

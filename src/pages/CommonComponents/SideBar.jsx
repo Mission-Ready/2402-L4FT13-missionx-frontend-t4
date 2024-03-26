@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import styles from "./SideBar.module.css";
 import progressTrackerIcon from "../../assets/TeacherDashboard/progressTracker.png";
 import studentProfileIcon from "../../assets/TeacherDashboard/studentProfiles.png";
@@ -34,27 +34,37 @@ function SideBar() {
               location.pathname === "/progress-tracker" ? styles.active : ""
             }`}
           >
-            <img src={progressTrackerIcon} alt="icon" />
-            {isActive ? (
-              <span style={{ display: "none" }}>PROGRESS TRACKER</span>
-            ) : (
-              <span>PROGRESS TRACKER</span>
-            )}
+            <img
+              src={progressTrackerIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              PROGRESS TRACKER
+            </span>
           </NavLink>
 
           <NavLink
-            to="/student-profiles"
+            to="/student-profile-viewer"
             className={`${styles.sidebarLink} ${
-              location.pathname === "/student-profiles" ? styles.active : ""
+              location.pathname === "/student-profile-viewer"
+                ? styles.active
+                : ""
             }`}
           >
-            <img src={studentProfileIcon} alt="icon" />
+            <img
+              src={studentProfileIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
 
-            {isActive ? (
-              <span style={{ display: "none" }}>STUDENT PROFILES</span>
-            ) : (
-              <span>STUDENT PROFILES</span>
-            )}
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              STUDENT PROFILES
+            </span>
           </NavLink>
           <NavLink
             to="/help-requests"
@@ -62,12 +72,16 @@ function SideBar() {
               location.pathname === "/help-requests" ? styles.active : ""
             }`}
           >
-            <img src={helpRequestsIcon} alt="icon" />
-            {isActive ? (
-              <span style={{ display: "none" }}>HELP REQUESTS</span>
-            ) : (
-              <span>HELP REQUESTS</span>
-            )}
+            <img
+              src={helpRequestsIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              HELP REQUESTS
+            </span>
           </NavLink>
           <NavLink
             to="/project-submissions"
@@ -75,12 +89,16 @@ function SideBar() {
               location.pathname === "/project-submissions" ? styles.active : ""
             }`}
           >
-            <img src={projectSubmissionsIcon} alt="icon" />
-            {isActive ? (
-              <span style={{ display: "none" }}>PROJECT SUBMISSIONS</span>
-            ) : (
-              <span>PROJECT SUBMISSIONS</span>
-            )}
+            <img
+              src={projectSubmissionsIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              PROJECT SUBMISSIONS
+            </span>
           </NavLink>
           <NavLink
             to="/project-library"
@@ -88,12 +106,17 @@ function SideBar() {
               location.pathname === "/project-library" ? styles.active : ""
             }`}
           >
-            <img src={projectLibraryIcon} alt="icon" />
-            {isActive ? (
-              <span style={{ display: "none" }}>PROJECT LIBRARY</span>
-            ) : (
-              <span>PROJECT LIBRARY</span>
-            )}
+            <img
+              src={projectLibraryIcon}
+              className={`${
+                isActive ? styles.closedIcons : styles.openedIcons
+              }`}
+              alt="icon"
+            />
+
+            <span className={`${isActive ? styles.hideText : styles.showText}`}>
+              PROJECT LIBRARY
+            </span>
           </NavLink>
         </div>
         <button className={styles.arrowButton} onClick={toggleSideBar}>
