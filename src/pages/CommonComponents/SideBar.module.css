@@ -42,6 +42,7 @@
   padding-left: 7%;
   padding-top: 3%;
   padding-bottom: 3%;
+  overflow: hidden;
 }
 
 .sidebarLink img {
@@ -66,10 +67,6 @@
   border-bottom-left-radius: 15%;
 }
 
-button img {
-  width: 20px;
-}
-
 .teacherPhoto {
   width: 35%;
   margin-left: 30%;
@@ -91,3 +88,7 @@ button img {
   color: white;
   padding-bottom: 10%;
 }
+/* 
+.sideBarText {
+  display: none;
+} */
