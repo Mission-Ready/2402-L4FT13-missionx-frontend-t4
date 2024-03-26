@@ -41,6 +41,17 @@ function SideBar() {
               <span>PROGRESS TRACKER</span>
             )}
           </NavLink>
+
+          <NavLink to="/student-profiles" className={styles.sidebarLink}>
+
+          <NavLink
+            to="/student-profile-viewer"
+            className={`${styles.sidebarLink} ${
+              location.pathname === "/student-profile-viewer" ? styles.active : ""
+            }`}
+          >
+            <img src={studentProfileIcon} alt="icon" />
+
           <NavLink
             to="/student-profiles"
             className={`${styles.sidebarLink} ${
@@ -48,11 +59,15 @@ function SideBar() {
             }`}
           >
             <img src={studentProfileIcon} alt="icon" />
+
             {isActive ? (
               <span style={{ display: "none" }}>STUDENT PROFILES</span>
             ) : (
               <span>STUDENT PROFILES</span>
             )}
+
+            STUDENT PROFILES
+
           </NavLink>
           <NavLink
             to="/help-requests"

@@ -1,4 +1,23 @@
+<<<<<<< HEAD
+
+.pinkBtn{
+<<<<<<< Updated upstream
+    background-color: deeppink;
+    margin: 3rem 1rem 0 0;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 14rem;
+    height: 2rem;
+    font-weight: 700;
+    position: relative;
+    left: 60%;
+    top: -20px;
+    padding: 0;
+=======
+=======
 .pinkBtn {
+>>>>>>> origin/main
   background-color: deeppink;
   margin: 3rem 1rem 0 0;
   border-radius: 5px;
@@ -11,6 +30,26 @@
   left: 60%;
   top: -20px;
   padding: 0;
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+}
+
+.blueBtn{
+<<<<<<< Updated upstream
+    background-color: aqua;
+    margin: 3rem 1rem 0 0;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 14rem;
+    height: 2rem;
+    font-weight: 700;
+    position: relative;
+    left: 60%;
+    top: -20px;
+    padding: 0;
+=======
+>>>>>>> origin/main
 }
 
 .blueBtn {
@@ -46,6 +85,64 @@ button:hover {
   width: 2rem;
 }
 
+<<<<<<< HEAD
+.flag:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.star{
+    position: absolute;
+=======
+  background-color: aqua;
+  margin: 3rem 1rem 0 0;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 14rem;
+  height: 2rem;
+  font-weight: 700;
+  position: relative;
+  left: 60%;
+  top: -20px;
+  padding: 0;
+}
+
+.blueBtn:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  color: black;
+  border: 1px solid black;
+}
+.pinkBtn:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  color: black;
+  border: 1px solid black;
+}
+
+.flag:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.flag {
+float: right;
+margin: 15px 5px 0 0;
+width: 2rem;
+
+}
+
+.star {
+position: absolute;
+}
+
+.container{
+  height: 65px;
+
+>>>>>>> Stashed changes
+=======
 .star {
   position: absolute;
+>>>>>>> origin/main
 }
