@@ -42,16 +42,6 @@ function SideBar() {
             )}
           </NavLink>
 
-          <NavLink to="/student-profiles" className={styles.sidebarLink}>
-
-          <NavLink
-            to="/student-profile-viewer"
-            className={`${styles.sidebarLink} ${
-              location.pathname === "/student-profile-viewer" ? styles.active : ""
-            }`}
-          >
-            <img src={studentProfileIcon} alt="icon" />
-
           <NavLink
             to="/student-profiles"
             className={`${styles.sidebarLink} ${
@@ -65,9 +55,6 @@ function SideBar() {
             ) : (
               <span>STUDENT PROFILES</span>
             )}
-
-            STUDENT PROFILES
-
           </NavLink>
           <NavLink
             to="/help-requests"
