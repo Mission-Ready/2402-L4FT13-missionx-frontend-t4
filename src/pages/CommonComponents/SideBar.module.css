@@ -35,10 +35,11 @@
 .sidebarLink {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 7%;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -70,7 +71,7 @@
 .teacherPhoto {
   width: 35%;
   margin-left: 30%;
-  margin-bottom: 30px;
+  margin-bottom: 1%;
 }
 
 .bottomIconsOpened {
@@ -97,15 +98,18 @@
 }
 
 .closedIcons {
-  width: 40px;
-  margin-left: 15%;
+  width: 50%;
+  margin-left: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .openedIcons {
-  width: 25px;
-  margin-right: 10px;
+  width: 7%;
+  margin-right: 5%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-
 .showText {
   display: inline;
 }

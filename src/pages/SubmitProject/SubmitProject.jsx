@@ -1,11 +1,14 @@
 import StudentSideBar from "../CommonComponents/StudentSideBar";
 import Footer from "../CommonComponents/Footer.jsx";
 import styles from "./SubmitProject.module.css";
+import StudentNavBar from "../CommonComponents/StudentNavBar.jsx";
 
 function SubmitProject() {
   return (
     <div className="page-container">
-      <div>{/* <NavBar /> */}</div>
+      <div>
+        <StudentNavBar />
+      </div>
       <div className={styles.content}>
         <StudentSideBar />
         <div className={styles.mainContent}>
