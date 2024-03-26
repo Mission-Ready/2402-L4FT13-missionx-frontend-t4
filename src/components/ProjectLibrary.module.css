@@ -59,11 +59,14 @@
   text-align: center;
   width: 50px;
   color: white;
+  /* left: 80px; */
+  border-radius: 4px;
 }
 
 .projectBtns {
-  position: relative;
-  flex: content;
+  /* position: relative; */
+  left: 350px;
+  right: 1000px;
 }
 
 .project.title {
