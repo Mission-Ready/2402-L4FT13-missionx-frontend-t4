@@ -121,7 +121,7 @@ export default function ProjectLibrary() {
                 <button className={styles.projectBtn}>ADVANCED</button>
               </div>
               <div className={styles.projectBtns}>
-                SHOW <button className={styles.projectNumBtn}>5</button>
+                SHOW <button className={styles.projectNumBtns}>5</button>
                 <button className={styles.projectBtns}>10</button>
                 <button className={styles.projectBtns}>15</button>
               </div>
@@ -137,8 +137,7 @@ export default function ProjectLibrary() {
                 <img src={project.src} alt="prj"></img>
                 <p>
                   {" "}
-                  {project.title}
-                  <br />
+                  <h2>{project.title}</h2>
                   BEGINNER | Animation
                 </p>
               </div>

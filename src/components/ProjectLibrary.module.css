@@ -50,18 +50,22 @@
 .projectBegBtn {
   background-color: #448cfc;
   width: 100px;
+  border-radius: 4px;
+  color: white;
 }
 
-.projectNumBtn {
+.projectNumBtns {
   background-color: #448cfc;
   text-align: center;
   width: 50px;
-
+  color: white;
 }
 
 .projectBtns {
-  text-align: center;
-  width: 50px;
-  position: absolute;
-  right: 100px;
+  position: relative;
+  flex: content;
+}
+
+.project.title {
+  width: 700px;
 }
