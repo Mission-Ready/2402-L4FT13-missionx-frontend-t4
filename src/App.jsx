@@ -1,8 +1,8 @@
 /** @format */
 
 
-import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import { Routes, Route } from "react-router-dom"
 
 //Import Components
 import Home from "./pages/Home/Home";

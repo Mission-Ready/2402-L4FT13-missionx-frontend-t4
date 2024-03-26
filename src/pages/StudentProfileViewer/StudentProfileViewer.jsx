@@ -90,6 +90,9 @@ function StudentProfileViewer(profiles) {
 
   return (
     <>
+
+    <h1>Student Profile Viewer Page</h1>
+
     <NavBar/>
    
     {/* <SideBar/> */}
