@@ -6,7 +6,25 @@
 }
 
 .content {
+  display: flex; /* Add this to display children side by side */
   flex: 1;
+}
+
+.mainContent {
+  flex: 1; /* Add this to make the main content div take up remaining space */
+  background-color: #b2e4fa;
+  flex-direction: column; /* This ensures elements inside main content are stacked vertically */
+}
+
+.innerBox {
+  width: 90%;
+  height: 85%;
+  background-color: rgb(227, 243, 248); /*Still have to match the right colour*/
+  padding: 1%;
+  border-radius: 3%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 .footer {

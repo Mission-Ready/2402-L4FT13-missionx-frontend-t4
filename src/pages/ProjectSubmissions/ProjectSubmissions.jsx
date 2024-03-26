@@ -11,7 +11,9 @@ function ProjectSubmissions() {
       </div>
       <div className={styles.content}>
         <SideBar />
-        Add your main content here??
+        <div className={styles.mainContent}>
+          <div className={styles.innerBox}>Add your main content here??</div>
+        </div>
       </div>
       <Footer className={styles.footer} />
     </div>
