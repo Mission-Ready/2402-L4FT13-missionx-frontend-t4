@@ -1,12 +1,12 @@
 .body{
     background-color: rgb(165, 215, 246);
     width: 100%;
-    left: 228px;
-    position: absolute;
+    left: 229px;
+    position: relative;
     justify-content: center;
     display: flex;
-    top: 73px;
     height: 80vh;
+    top: -841px;
 }
 
 .container{
