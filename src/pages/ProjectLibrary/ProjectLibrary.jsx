@@ -4,21 +4,24 @@ import React from "react";
 import ProjectNavBar from "../../components/ProjectNavBar.jsx";
 import ProjectSideBar from "../../components/ProjectSideBar.jsx";
 import Footer from "../../components/Footer.jsx";
-import styles from "../../components/ProjectLibrary.module.css";
+import styles from "../ProjectLibrary/ProjectLibrary.module.css";
+import { Link } from "react-router-dom";
 
 export default function ProjectLibrary() {
-  const SDProjectLibraryData = [
+  const introData = [
     {
       title: "Introduction",
       level: "Beginner",
       activity_type: "Animation",
       src: "/images/projects/Project01.png",
     },
+  ];
+  const projectData = [
     {
       title: "My Birthday",
       level: "Beginner",
       activity_type: "Animation",
-      src: "/images/projects/Project02.png",
+      src: "images/projects/Project02.png",
     },
     {
       title: "10 Block Challenge",
@@ -103,56 +106,55 @@ export default function ProjectLibrary() {
   return (
     <>
       <ProjectNavBar />
-      <div>
-        <div className={styles.main}>
+      {/* <div className={styles.header}>
+        <div className={styles.mainContainer}>
+          <h1 className={styles.h1}>PROJECTS</h1>
           <br />
-          <div>
-            <h1 className={styles.h1}>PROJECTS</h1>
-            <p>
-              Welcome to the project library.You can use the Filter on the right
-              to help you search for specific projects.
-            </p>
-            <br />
-
-            <div className={styles.btnContainer}>
-              <div>
-                <button className={styles.projectBegBtn}>BEGINNER</button>
-                <button className={styles.projectBtn}>INTERMEDIATE</button>
-                <button className={styles.projectBtn}>ADVANCED</button>
-              </div>
-              <div className={styles.projectBtns}>
-                SHOW <button className={styles.projectNumBtns}>5</button>
-                <button className={styles.projectBtns}>10</button>
-                <button className={styles.projectBtns}>15</button>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.container}>
-            <ProjectSideBar />
-          </div>
-          <div className={styles.projectImages}>
-            {SDProjectLibraryData.map((project, index) => (
-              <div key={index}>
-                <img src={project.src} alt="prj"></img>
-                <p>
-                  {" "}
-                  <h2>{project.title}</h2>
-                  BEGINNER | Animation
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className={styles.bttBtn}>
-          <button>Back to Top</button>
+          <p>
+            Welcome to the project library. You can use the Filter on the right
+            to help you search for specific projects.
+          </p>
         </div>
         <br />
+      </div> */}
+      {/* <div className={styles.btnContainer}>
+        <button className={styles.projectBegBtn}>BEGINNER</button>
+        <button className={styles.projectBtn}>INTERMEDIATE</button>
+        <button className={styles.projectBtn}>ADVANCED</button>
+        <div className={styles.projectBtns}>
+          SHOW <button className={styles.projectNumBtns}>5</button>
+          <button className={styles.projectBtns}>10</button>
+          <button className={styles.projectBtns}>15</button>
+        </div>
+      </div> */}
+
+      {/* <ProjectSideBar />  */}
+
+      <div className={styles.imageContainer}>
+        <div className={styles.introProjectImage}>
+          {introData.map((project, index) => (
+            <div key={index}>
+              <Link to="/" className="intro-link"></Link>
+              <img src={project.src} alt="intro"></img>
+              <h2>Introduction</h2> BEGINNER | Animation
+            </div>
+          ))}
+        </div>
+        {/* <div className={styles.projectImages}>
+        {projectData.map((project, index) => (
+          <div key={index}>
+            <img src={project.src} alt="prj"></img>
+            <h2>{project.title}</h2> BEGINNER | Animation
+          </div>
+        ))}
+        </div> */}
       </div>
-      <br />
-      <div>
-        <Footer />
-      </div>
+
+      {/* <div className={styles.backBtn}>
+        <button>BACK TO TOP</button>
+      </div> */}
+
+      {/* <Footer /> */}
     </>
   );
 }

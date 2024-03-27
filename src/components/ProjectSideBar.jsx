@@ -8,7 +8,7 @@ export default function ProjectSideBar() {
 
   return (
     <>
-      <div className={styles.projectSidebar}>
+      <div className={styles.projectSideBar}>
         <h4 className={styles.h4}>SUBSCRIPTION</h4>
         <label>
           <input onChange={handleCheck} type="checkbox" /> Free

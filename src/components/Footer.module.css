@@ -10,9 +10,11 @@
   height: 535px;
   display: flex;
   justify-content: space-around;
-  padding-top: 154px;
   text-align: left;
   color: #707070;
+  position: absolute;
+  bottom:0;
+
 }
 
 .footerLayout > h3 {
